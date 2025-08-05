@@ -1,6 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Search from './components/Search';
+import AddContent from './pages/AddContent';
+import Display from './pages/Display';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <main className="">
         <Routes>
           <Route path="/" element={<Search />} />
+          <Route path='/add-content' element={<AddContent />} />
+          <Route path="/display" element={<Display />} />
         </Routes>
       </main>
     </div>
