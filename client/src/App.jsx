@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Search from './components/Search';
 import AddContent from './pages/AddContent';
 import Display from './pages/Display';
+import SearchResults from './components/SearchResults';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Search />} />
           <Route path='/add-content' element={<AddContent />} />
           <Route path="/display" element={<Display />} />
+          <Route path="/results" element={<SearchResults />} />
         </Routes>
       </main>
     </div>
