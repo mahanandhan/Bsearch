@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Search as SearchIcon } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
   const [query, setQuery] = useState('');
-
+  const navigate = useNavigate();
   const handleSearch = (e) => {
     e.preventDefault();
     console.log('Search for:', query);
@@ -33,6 +34,10 @@ const Search = () => {
           Search
         </button>
       </form>
+      <div>
+        {/* post your website */}
+        <button onClick={() => navigate('/add-content')} className='ml-4 p-2 pl-5 pr-5 bg-blue-600 text-white rounded-full mt-1 cursor-pointer hover:bg-blue-700 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed'>Post</button>
+      </div>
     </div>
   );
 };
