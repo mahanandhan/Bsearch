@@ -17,7 +17,7 @@ const AddContent = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/data/data', {
+      const response = await axios.post('https://bsearch-7fxb.onrender.com/api/data/data', {
         name,
         url,
         description

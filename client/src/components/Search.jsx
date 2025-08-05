@@ -19,7 +19,7 @@ const Search = () => {
     setError('');
 
     try {
-      const res = await axios.get(`http://localhost:3000/api/data/search?name=${query}`);
+      const res = await axios.get(`https://bsearch-7fxb.onrender.com/api/data/search?name=${query}`);
       const fetchedResults = res.data.data;
       setResults(fetchedResults); // ✅ update local state
 
